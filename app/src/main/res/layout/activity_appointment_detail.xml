@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Header">
+
+        <TextView
+            android:id="@+id/btnQuayLaiHeader"
+            style="@style/NutQuayLaiHeader" />
+
+        <TextView
+            style="@style/HeaderTitle"
+            android:layout_marginStart="8dp"
+            android:text="Chi tiết lịch hẹn" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvTieuDe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_main"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@color/border" />
+
+                <TextView
+                    style="@style/Nhan"
+                    android:layout_marginBottom="2dp"
+                    android:text="Địa điểm" />
+
+                <TextView
+                    android:id="@+id/tvDiaDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_main"
+                    android:textSize="17sp" />
+
+                <TextView
+                    style="@style/Nhan"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Thời gian" />
+
+                <TextView
+                    android:id="@+id/tvThoiGian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_main"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/border" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nhắc nhở"
+                            android:textColor="@color/text_main"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tvTrangThaiNhac"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/text_sub"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/swNhacNho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnQuayLai"
+                style="@style/NutVien"
+                android:layout_marginTop="24dp"
+                android:text="Quay lại" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnXoaLichHen"
+                style="@style/NutChinh"
+                android:layout_marginTop="12dp"
+                android:text="Xóa lịch hẹn"
+                app:backgroundTint="@color/danger" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

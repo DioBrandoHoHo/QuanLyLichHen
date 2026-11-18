@@ -1,0 +1,30 @@
+# Gradle / build
+.gradle/
+.kotlin/
+build/
+/captures
+.externalNativeBuild
+.cxx
+
+# Cấu hình riêng từng máy
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.vscode/
+
+# File build đầu ra & khóa ký
+*.apk
+*.aab
+*.ap_
+*.dex
+*.jks
+*.keystore
+release/
+
+# Log & file hệ điều hành
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

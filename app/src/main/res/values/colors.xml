@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#3E4FC9</color>
+    <color name="primary_dark">#2B3896</color>
+    <color name="primary_light">#E8EBFB</color>
+    <color name="primary_soft">#C9CFF5</color>
+
+    <color name="bg_main">#F5F6FB</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="border">#DFE2EE</color>
+
+    <color name="text_main">#1F2233</color>
+    <color name="text_sub">#6E7389</color>
+    <color name="text_hint">#A3A8BC</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="nhac_bg">#FFF0DE</color>
+    <color name="nhac_text">#D96A00</color>
+    <color name="khong_nhac_bg">#ECEDF2</color>
+    <color name="khong_nhac_text">#6E7389</color>
+
+    <color name="danger">#E04848</color>
+</resources>

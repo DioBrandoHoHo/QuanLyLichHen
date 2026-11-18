@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingTop="56dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_logo"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:text="LH"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="28dp"
+            android:text="Quản lý lịch hẹn"
+            android:textColor="@color/text_main"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:text="Đăng nhập để tiếp tục"
+            android:textColor="@color/text_sub"
+            android:textSize="15sp" />
+
+        <TextView
+            style="@style/Nhan"
+            android:layout_marginTop="40dp"
+            android:text="Tên đăng nhập" />
+
+        <EditText
+            android:id="@+id/edtTenDangNhap"
+            style="@style/O_Nhap"
+            android:hint="Nhập tên đăng nhập"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/Nhan"
+            android:layout_marginTop="18dp"
+            android:text="Mật khẩu" />
+
+        <EditText
+            android:id="@+id/edtMatKhau"
+            style="@style/O_Nhap"
+            android:hint="Nhập mật khẩu"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/tvLoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/danger"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDangNhap"
+            style="@style/NutChinh"
+            android:layout_marginTop="24dp"
+            android:text="Đăng nhập" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Tài khoản mẫu: admin / 123456"
+            android:textColor="@color/text_hint"
+            android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/Header">
+
+        <TextView
+            android:id="@+id/btnQuayLaiHeader"
+            style="@style/NutQuayLaiHeader" />
+
+        <TextView
+            style="@style/HeaderTitle"
+            android:layout_marginStart="8dp"
+            android:text="Thêm lịch hẹn" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                style="@style/Nhan"
+                android:text="Tên lịch hẹn" />
+
+            <EditText
+                android:id="@+id/edtTenLichHen"
+                style="@style/O_Nhap"
+                android:hint="Ví dụ: Họp nhóm đồ án"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                style="@style/Nhan"
+                android:layout_marginTop="16dp"
+                android:text="Địa điểm" />
+
+            <EditText
+                android:id="@+id/edtDiaDiem"
+                style="@style/O_Nhap"
+                android:hint="Ví dụ: Phòng B203"
+                android:inputType="textCapSentences" />
+
+            <TextView
+                style="@style/Nhan"
+                android:layout_marginTop="16dp"
+                android:text="Ngày hẹn" />
+
+            <DatePicker
+                android:id="@+id/dpNgayHen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_picker"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true" />
+
+            <TextView
+                style="@style/Nhan"
+                android:layout_marginTop="16dp"
+                android:text="Giờ hẹn" />
+
+            <TimePicker
+                android:id="@+id/tpGioHen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_picker"
+                android:timePickerMode="spinner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_card"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingTop="6dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="6dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nhắc nhở trước giờ hẹn"
+                    android:textColor="@color/text_main"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.materialswitch.MaterialSwitch
+                    android:id="@+id/swNhacNho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLuuLichHen"
+                style="@style/NutChinh"
+                android:layout_marginTop="24dp"
+                android:text="Lưu lịch hẹn" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
